@@ -1,0 +1,517 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'poppins', sans-serif ;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #080808;
+    color: white;
+}
+#header {
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.container{
+    padding: 10px 10%;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 100000;
+    background-color: transparent;
+}
+
+header.sticky {
+    padding: 5px 100px;
+    background-color: #262626;
+}
+
+header .logo {
+    position: relative;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+}
+
+/* Set the default logo image */
+header .logo {
+    background-image: url(img/1.png);
+    background-size: cover; /* Adjust the background size property as needed */
+    background-position: center;
+    width: 180px; /* Adjust the width and height as needed */
+    height: 100px;
+}
+
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+header ul li {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+header ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px ;
+    position: relative;
+}
+header ul li a::after{
+    content: '';
+    width:0% ;
+    height: 3px;
+    background: #FF004F;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+header ul li a:hover::after{
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    align-items: center;  /* align items vertically in the center */
+    justify-content: space-between;  /* put maximum space between elements */
+    height: 100%; 
+}
+
+.col-2 {
+    flex: 1;  /* allow the div to grow and take up available space */
+    display: flex;  /* make this a flex container too */
+    justify-content: center;  /* center the image horizontally */
+    align-items: center;  /* center the image vertically */
+    
+}
+
+.col-2-text {
+    flex: 2; 
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+    font-size: 15px;
+    padding: 0 5%;  
+}
+.highlighted {
+    color: #FF004F;
+}
+/* Adjust scroll position for "A propos de moi" section */
+#id {
+    padding-top: 120px; /* Adjust this value as needed */
+    margin-top: -120px; /* Adjust this value as needed */
+  }
+ 
+  .section {
+    scroll-margin-top: 120px; /* Adjust this value as needed */
+  }
+.img{
+    border-radius: 300px;
+}
+
+
+
+.about-col-1{
+    flex-basis: 25%;
+}
+.about-col-2{
+    flex-basis: 70%;
+}
+.sub-tittle{
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+
+}
+.row1{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
+.container1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.header-container {
+    flex-basis: 30%;  /* allocate equal width to each container */
+    text-align:justify;
+    display: flex;
+    flex-direction: column;
+}
+
+.header h3 span {
+    display: inline-block;
+    position: relative;
+}
+
+.header h3 span::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color:#FF004F;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-in-out;
+}
+
+.header:hover h3 span::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+.info {
+    margin-top: 20px;
+    height: auto;  /* auto adjust the height based on the content */
+    overflow: hidden;
+    visibility: hidden;
+    text-align: left;
+    font-size: 14px; 
+    flex-grow: 1;
+    height: 200px;  /* set the specific height */
+    overflow-y: auto; /* add scroll bar if content exceeds height */
+    margin-top: 20px;
+}
+
+.info::-webkit-scrollbar {
+    width: 1px;  /* width of the scrollbar */
+}
+
+.info::-webkit-scrollbar-track {
+    background: transparent;  /* make scrollbar track transparent */
+}
+
+.info::-webkit-scrollbar-thumb {
+    background: #f291b0;  /* make scrollbar handle a light grey */
+    border-radius: 4px;  /* slightly round the corners */
+}
+
+.info::-webkit-scrollbar-thumb:hover {
+    background:#FF004F;  /* make scrollbar handle darker on hover */
+}
+
+
+
+
+.visible {
+    visibility: visible;
+}
+
+.abc{
+color: #f291b0;
+}
+
+
+.container1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.competence-container {
+    margin-left: 100px;  /* adjust this value as necessary */
+}
+.header h3 {
+    padding-left: 20px;  /* adjust this value as necessary */
+    margin-left: 20px;
+}
+
+
+
+/*--------intrests-----*/
+ 
+#intrests{
+    padding:30px 0 ;
+}
+.intrest-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:40px;
+    margin-top: 50px;
+}
+.intrest-list div{
+    background: #262626;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+    transition: background 0.5s, transform 0.5s;
+    padding: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.intrest-list h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0 0 15px;
+}
+.intrest-list div:hover{
+    background: #FF004F;
+    transform: translateY(-10px);
+}
+
+
+
+.intrest-list h2 i {
+    margin-left: 10px;
+}
+.intrest-list h2 span {
+    margin-right: 10px;
+}
+
+
+/*----contact---*/
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-left p{
+    margin-top: 30px;
+
+}
+.contact-left p i{
+    color: #FF004F;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons{
+    margin: 30px;
+}
+.social-icons a i{
+    text-decoration: none !important;
+    font-size: 30px !important;
+    margin-right: 15px !important;
+    color: #ababab !important;
+    display: inline-block !important;
+    transition: transform 0.5s;
+}
+.social-icons a:hover i{
+    color: #FF004F !important;
+    transform: translateY(-5px) !important;
+}
+.btn {
+    display: inline-block;
+    background: #FF004F;
+    padding: 10px 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #FF004F;
+}
+.copyright{
+    width: 100%;
+    padding: 25px 0;
+    text-align: center;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+/*---smallscreen--*/
+
+  
+
+  
+
+
+header ul {
+    background: #FF004F;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s, opacity 0.5s;
+    opacity: 1;
+    color: white;
+    display: none;
+}
+
+header ul li {
+    display: block;
+    margin: 25px;
+}
+
+header ul .fas {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+}
+header .fas.fa-bars {
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    display: none;
+    font-size: 25px;
+    cursor: pointer;
+    z-index: 3;
+}
+  
+
+@media only screen and (max-width: 600px) {
+    #menubtn {
+        display: block;
+    }
+    
+    header .fas {
+        display: block;
+        font-size: 25px;
+    }
+    
+    /* Added to ensure visibility of text on the pink background */
+    header ul li a {
+        color: white;
+    }
+    .mainpic{
+        display: none;
+    }
+    .logo{ position: fixed;
+        position: fixed;
+        font-size: 25px;
+        color: white;
+        cursor: pointer;
+        z-index: 3;
+       
+        margin: 0 0 0 -60px;
+    }body {
+        font-size: 18px;
+    }
+    .container {
+        padding: 50px;
+    }
+    
+
+}
+    
+    header ul {
+        background: #FF004F;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s, opacity 0.5s;
+        opacity: 1;
+        color: white;
+        display: none; /* Add this line to hide the menu initially */
+    }
+    .fas.fa-times-circle {
+        position: fixed;
+        font-size: 25px;
+        color: white;
+        cursor: pointer;
+        z-index: 3;
+        right: 10px;  /* Position it 20px from the right side */
+        top: 270px;    /* Position it 20px from the top */
+        left: 390px;
+    }
+    #menubtn {
+        position: absolute;
+        margin: 80px 70px;
+        font-size: 25px;
+        color: white;
+        cursor: pointer;
+        z-index: 3;
+        position: fixed;
+        right: 0px;  /* Position it 20px from the right side */
+        top: 0px;  /* Position it 20px from the top */
+      
+      }
+ 
+
+
+
+@media only screen and (min-width:601px){
+    header ul {
+        background: none;
+        position: relative;
+        right: 0;
+        width: initial;
+        height: initial;
+        padding-top: 0;
+        display: block !important;
+        color: black; /* Make the text black */
+    }
+
+    header ul li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    header ul .fas {
+        display: none;
+    }
+    
+    #menubtn {
+        display: block;
+        position: fixed; /* Fix the button to a specific position */
+        right: 0px; /* Position from the right side */
+        top: 0px; /* Position from the top */
+        z-index: 10000; /* Make sure the button is always on top */
+    }
+
+    /* Added to ensure text color matches the rest of the site on larger screens */
+    header ul li a {
+        color: white;
+    }
+     header .fa-times-circle{
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    display: none;
+    font-size: 25px;
+    cursor: pointer;
+    z-index: 3;
+      }
+}
